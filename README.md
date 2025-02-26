@@ -25,11 +25,11 @@ Check out the live version of my portfolio:
 ## How to Use
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/your-portfolio.git
+   git clone https://github.com/Wojak1n/My-portfolio.git
    ```
 2. Navigate into the project directory:
    ```sh
-   cd your-portfolio
+   cd My-portfolio
    ```
 3. Open `index.html` in your browser or use a local development server.
 
