@@ -40,7 +40,7 @@ Check out the live version of my portfolio:
 
 ## Connect With Me
 - **GitHub:** [https://github.com/Wojak1n]
-- **Twitter:** [your Twitter link]
-- **LinkedIn:** [your LinkedIn link]
+- **Twitter:** [https://twitter.com/Wojak1n]
+- **LinkedIn:** [https://linkedin.com/in/Elhabib-assefri]
 
 Feel free to explore, fork, and contribute to my portfolio project. Your feedback is highly appreciated!
