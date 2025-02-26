@@ -14,7 +14,7 @@ I am a passionate tech enthusiast obsessed with computers, particularly hardware
 
 ## Live Prototype
 Check out the live version of my portfolio:
-[Prototype Link Here](#) *(Replace with actual link)*
+[https://wojak1n.github.io/My-Portfolio/](#)
 
 ## Technologies Used
 - **HTML, CSS, Tailwind CSS**
