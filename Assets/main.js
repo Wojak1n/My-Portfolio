@@ -70,12 +70,22 @@ themeToggle?.addEventListener('click', () => {
     icon.className = isDark ? 'uil uil-sun' : 'uil uil-moon';
 });
 
-// Load saved theme
+// Load saved theme or default to dark
 const savedTheme = localStorage.getItem('theme');
-if (savedTheme === 'dark') {
+if (savedTheme === 'light') {
+    // Only apply light theme if explicitly saved
+    document.body.classList.remove('dark-theme');
+    const icon = themeToggle?.querySelector('i');
+    if (icon) icon.className = 'uil uil-moon';
+} else {
+    // Default to dark theme
     document.body.classList.add('dark-theme');
     const icon = themeToggle?.querySelector('i');
     if (icon) icon.className = 'uil uil-sun';
+    // Save dark as default if no preference exists
+    if (!savedTheme) {
+        localStorage.setItem('theme', 'dark');
+    }
 }
 
 /*==================== CURSOR EFFECTS ====================*/

@@ -1406,6 +1406,29 @@ body {
 }
 
 /*==================== RESPONSIVE DESIGN ====================*/
+
+/* Large tablets and small desktops */
+@media screen and (max-width: 1024px) {
+    .hero-container {
+        max-width: 900px;
+        gap: var(--space-12);
+    }
+
+    .hero-title {
+        font-size: var(--fs-5xl);
+    }
+
+    .hero-image-container {
+        width: 350px;
+        height: 350px;
+    }
+
+    .hero-description {
+        max-width: 450px;
+    }
+}
+
+/* Tablets */
 @media screen and (max-width: 768px) {
     .nav-menu {
         position: fixed;
@@ -1430,19 +1453,43 @@ body {
         display: flex;
     }
 
+    .hero {
+        padding: var(--space-16) 0;
+        min-height: 90vh;
+    }
+
     .hero-container {
         grid-template-columns: 1fr;
-        gap: var(--space-8);
+        gap: var(--space-10);
         text-align: center;
+        padding: 0 var(--space-6);
     }
 
     .hero-title {
         font-size: var(--fs-4xl);
+        margin-bottom: var(--space-4);
+    }
+
+    .hero-subtitle {
+        font-size: var(--fs-xl);
+        margin-bottom: var(--space-4);
+    }
+
+    .hero-description {
+        font-size: var(--fs-base);
+        margin-bottom: var(--space-6);
+        max-width: 100%;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+        gap: var(--space-3);
     }
 
     .hero-image-container {
-        width: 300px;
-        height: 300px;
+        width: 280px;
+        height: 280px;
+        margin: 0 auto;
     }
 
     .about-content {
@@ -1479,6 +1526,77 @@ body {
 
     .floating-shape {
         display: none;
+    }
+}
+
+/* Mobile devices */
+@media screen and (max-width: 480px) {
+    .hero {
+        padding: var(--space-12) 0;
+        min-height: 85vh;
+    }
+
+    .hero-container {
+        gap: var(--space-8);
+        padding: 0 var(--space-4);
+    }
+
+    .hero-title {
+        font-size: var(--fs-3xl);
+        line-height: 1.2;
+    }
+
+    .hero-subtitle {
+        font-size: var(--fs-lg);
+        flex-direction: column;
+        gap: var(--space-1);
+    }
+
+    .hero-description {
+        font-size: var(--fs-sm);
+        line-height: 1.6;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--space-3);
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 280px;
+        justify-content: center;
+    }
+
+    .hero-image-container {
+        width: 240px;
+        height: 240px;
+    }
+
+    .greeting-text {
+        font-size: var(--fs-base);
+    }
+}
+
+/* Extra small devices */
+@media screen and (max-width: 360px) {
+    .hero-container {
+        padding: 0 var(--space-3);
+    }
+
+    .hero-title {
+        font-size: var(--fs-2xl);
+    }
+
+    .hero-image-container {
+        width: 200px;
+        height: 200px;
+    }
+
+    .btn {
+        padding: var(--space-3) var(--space-4);
+        font-size: var(--fs-sm);
     }
 }
 
