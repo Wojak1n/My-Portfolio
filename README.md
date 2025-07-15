@@ -1,5 +1,4 @@
 # My Portfolio
-![Portfolio Preview](prototype/1.png) 
 Welcome to my portfolio repository! This project showcases my expertise in web design and development, with a focus on high-quality, responsive, and visually appealing websites.
 
 ## About Me
