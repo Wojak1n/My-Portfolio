@@ -1476,6 +1476,15 @@ body {
         display: flex;
     }
 
+    /* Hide tech icons around photo on mobile */
+    .tech-icon {
+        display: none;
+    }
+
+    .floating-elements {
+        display: none;
+    }
+
     .hero {
         padding: var(--space-16) 0;
         min-height: 90vh;
@@ -1515,6 +1524,20 @@ body {
         width: 280px;
         height: 280px;
         margin: 0 auto;
+    }
+
+    /* Fix scroll indicator for mobile */
+    .scroll-indicator {
+        bottom: var(--space-4);
+        font-size: var(--fs-sm);
+    }
+
+    .scroll-text {
+        font-size: var(--fs-xs);
+    }
+
+    .scroll-arrow {
+        font-size: var(--fs-lg);
     }
 
     .about-content {
@@ -1622,6 +1645,15 @@ body {
 
     .hero-greeting {
         justify-content: center;
+    }
+
+    /* Further optimize scroll indicator for small mobile */
+    .scroll-indicator {
+        bottom: var(--space-3);
+    }
+
+    .scroll-text {
+        display: none; /* Hide text on very small screens */
     }
 }
 
