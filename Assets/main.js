@@ -88,20 +88,6 @@ if (savedTheme === 'light') {
     }
 }
 
-/*==================== CURSOR EFFECTS ====================*/
-let mouseX = 0, mouseY = 0;
-let followerX = 0, followerY = 0;
-
-// Update cursor position
-document.addEventListener('mousemove', (e) => {
-    mouseX = e.clientX;
-    mouseY = e.clientY;
-
-    if (cursor) {
-        cursor.style.left = mouseX + 'px';
-        cursor.style.top = mouseY + 'px';
-    }
-});
 
 // Smooth follower animation
 function animateFollower() {
