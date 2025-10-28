@@ -130,6 +130,7 @@ body {
     transition: all var(--transition-normal);
     width: 100%;
     max-width: 100vw;
+    position: relative;
 }
 
 ::selection {
@@ -1413,15 +1414,49 @@ body {
 }
 
 /*==================== GLOBAL RESPONSIVE FIXES ====================*/
-/* Prevent horizontal scrolling only on mobile */
+/* Prevent horizontal scrolling on mobile */
 @media screen and (max-width: 768px) {
+    * {
+        max-width: 100vw;
+        box-sizing: border-box;
+    }
+
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+        max-width: 100vw;
+    }
+
     section, div, main, header, footer {
         overflow-x: hidden;
+        max-width: 100%;
     }
 
     .hero-content, .about-content, .skills-content, .projects-content, .contact-content {
         width: 100%;
         overflow-x: hidden;
+        max-width: 100%;
+    }
+
+    .hero-visual, .hero-image-container, .image-frame {
+        overflow-x: hidden;
+        max-width: 100%;
+    }
+
+    .container {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* Force hide any horizontal scrollbar on mobile */
+    ::-webkit-scrollbar:horizontal {
+        display: none;
+    }
+
+    /* Ensure no element can exceed viewport width */
+    img, video, iframe, canvas, svg {
+        max-width: 100% !important;
+        height: auto !important;
     }
 }
 
@@ -1544,9 +1579,10 @@ body {
     }
 
     .hero-image-container {
-        width: 250px;
-        height: 250px;
+        width: min(250px, 80vw);
+        height: min(250px, 80vw);
         margin: 0 auto;
+        max-width: calc(100vw - 2rem);
     }
 
     /* Fix scroll indicator for mobile */
@@ -1657,9 +1693,10 @@ body {
     }
 
     .hero-image-container {
-        width: 220px;
-        height: 220px;
+        width: min(220px, 75vw);
+        height: min(220px, 75vw);
         margin: 0 auto;
+        max-width: calc(100vw - 2rem);
     }
 
     .greeting-text {
@@ -1706,8 +1743,9 @@ body {
     }
 
     .hero-image-container {
-        width: 180px;
-        height: 180px;
+        width: min(180px, 70vw);
+        height: min(180px, 70vw);
+        max-width: calc(100vw - 1rem);
     }
 
     .btn {
