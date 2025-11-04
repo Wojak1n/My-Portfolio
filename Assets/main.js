@@ -134,10 +134,12 @@ const typedElement = document.getElementById('typed-text');
 if (typedElement && typeof Typed !== 'undefined') {
     new Typed('#typed-text', {
         strings: [
-            'Full Stack Developer',
-            'Tech Enthusiast',
+            'Full Stack Web Developer',
+            'Computer Enthusiast',
+            'Gaming Enthusiast',
+            'PC Builder',
+            'Tech Innovator',
             'Problem Solver',
-            'Creative Thinker',
             'Hardware Lover'
         ],
         typeSpeed: 50,

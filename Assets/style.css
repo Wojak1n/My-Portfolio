@@ -1252,6 +1252,104 @@ body {
     letter-spacing: 0.5px;
 }
 
+/*==================== MORE PROJECTS SECTION ====================*/
+.more-projects-section {
+    margin-top: var(--space-16);
+    padding: var(--space-12) 0;
+    text-align: center;
+    position: relative;
+}
+
+.more-projects-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 2px;
+    background: var(--primary-gradient);
+    border-radius: var(--radius-full);
+}
+
+.more-projects-content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: var(--space-8) var(--space-6);
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-2xl);
+    box-shadow: var(--shadow-lg), 0 0 20px rgba(99, 102, 241, 0.1);
+}
+
+.more-projects-title {
+    font-size: var(--fs-2xl);
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: var(--space-4);
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.more-projects-description {
+    font-size: var(--fs-base);
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: var(--space-8);
+}
+
+.more-projects-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-3);
+    padding: var(--space-4) var(--space-8);
+    font-size: var(--fs-base);
+    font-weight: 600;
+    text-decoration: none;
+    border: 2px solid var(--primary-color);
+    border-radius: var(--radius-full);
+    color: var(--primary-color);
+    background: transparent;
+    transition: all var(--transition-normal);
+    position: relative;
+    overflow: hidden;
+}
+
+.more-projects-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: var(--primary-gradient);
+    transition: left var(--transition-normal);
+    z-index: -1;
+}
+
+.more-projects-btn:hover::before {
+    left: 0;
+}
+
+.more-projects-btn:hover {
+    color: var(--text-white);
+    border-color: transparent;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg), 0 10px 30px rgba(99, 102, 241, 0.3);
+}
+
+.more-projects-btn i:first-child {
+    font-size: var(--fs-lg);
+}
+
+.more-projects-btn i:last-child {
+    font-size: var(--fs-sm);
+    opacity: 0.8;
+}
+
 /*==================== CONTACT SECTION ====================*/
 .contact {
     padding: var(--space-20) 0;
@@ -1616,6 +1714,31 @@ body {
         grid-template-columns: 1fr;
     }
 
+    .more-projects-section {
+        margin-top: var(--space-12);
+        padding: var(--space-8) 0;
+    }
+
+    .more-projects-content {
+        padding: var(--space-6) var(--space-4);
+        margin: 0 var(--space-4);
+    }
+
+    .more-projects-title {
+        font-size: var(--fs-xl);
+    }
+
+    .more-projects-description {
+        font-size: var(--fs-sm);
+        margin-bottom: var(--space-6);
+    }
+
+    .more-projects-btn {
+        padding: var(--space-3) var(--space-6);
+        font-size: var(--fs-sm);
+        gap: var(--space-2);
+    }
+
     .contact-content {
         grid-template-columns: 1fr;
         gap: var(--space-8);
@@ -1714,6 +1837,35 @@ body {
 
     .scroll-text {
         display: none; /* Hide text on very small screens */
+    }
+
+    .more-projects-section {
+        margin-top: var(--space-8);
+        padding: var(--space-6) 0;
+    }
+
+    .more-projects-content {
+        padding: var(--space-4) var(--space-3);
+        margin: 0 var(--space-3);
+    }
+
+    .more-projects-title {
+        font-size: var(--fs-lg);
+        margin-bottom: var(--space-3);
+    }
+
+    .more-projects-description {
+        font-size: var(--fs-xs);
+        margin-bottom: var(--space-4);
+    }
+
+    .more-projects-btn {
+        padding: var(--space-2) var(--space-4);
+        font-size: var(--fs-xs);
+        gap: var(--space-1);
+        width: 90%;
+        max-width: 250px;
+        justify-content: center;
     }
 }
 
